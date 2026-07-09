@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Painel de Acesso</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+  <div class="login-box">
+    <h1>Painel de Acesso</h1>
+    <p class="subtitle">Área restrita</p>
+
+    <form id="login-form">
+      <label for="email">Usuário</label>
+      <input type="email" id="email" required autocomplete="username" placeholder="usuario@exemplo.com">
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" required autocomplete="current-password" placeholder="••••••••">
+
+      <button type="submit" id="login-btn">Entrar</button>
+      <p id="error-msg" class="error"></p>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabaseClient.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+
+body { background: #14161a; color: #e8e8ea; min-height: 100vh; }
+
+/* LOGIN */
+.login-body { display: flex; align-items: center; justify-content: center; height: 100vh; }
+.login-box { background: #1e2126; padding: 40px; border-radius: 12px; width: 320px; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+.login-box h1 { font-size: 20px; margin-bottom: 4px; }
+.subtitle { color: #888; font-size: 13px; margin-bottom: 24px; }
+.login-box label { display: block; font-size: 13px; margin-top: 14px; margin-bottom: 6px; color: #aaa; }
+.login-box input { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #333; background: #101216; color: #fff; font-size: 14px; }
+.login-box input:focus { outline: none; border-color: #5b6cff; }
+.login-box button { width: 100%; margin-top: 22px; padding: 11px; border: none; border-radius: 8px; background: #5b6cff; color: #fff; font-weight: 600; cursor: pointer; font-size: 14px; }
+.login-box button:disabled { opacity: 0.6; cursor: default; }
+.error { color: #ff6b6b; font-size: 13px; margin-top: 10px; min-height: 16px; }
+
+/* APP / GALERIA */
+.topbar { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; background: #1e2126; border-bottom: 1px solid #2a2d33; }
+.topbar h1 { font-size: 16px; font-weight: 600; }
+.logout-btn { background: transparent; border: 1px solid #444; color: #ccc; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 13px; }
+.logout-btn:hover { background: #2a2d33; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+.panel { background: #1e2126; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+.panel h2 { font-size: 14px; margin-bottom: 14px; color: #ccc; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.upload-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.upload-row select, .upload-row input[type="file"] { background: #101216; border: 1px solid #333; color: #fff; padding: 9px 10px; border-radius: 8px; font-size: 13px; }
+.btn { padding: 9px 16px; border-radius: 8px; border: none; background: #5b6cff; color: #fff; font-weight: 600; cursor: pointer; font-size: 13px; }
+.btn:hover { background: #4757e0; }
+.btn.secondary { background: #333844; }
+.btn.secondary:hover { background: #3f4553; }
+.btn:disabled { opacity: 0.5; cursor: default; }
+
+.new-cat-row { display: flex; gap: 8px; margin-top: 12px; }
+.new-cat-row input { flex: 1; background: #101216; border: 1px solid #333; color: #fff; padding: 9px 10px; border-radius: 8px; font-size: 13px; }
+
+.tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
+.tab { padding: 8px 14px; border-radius: 20px; background: #1e2126; border: 1px solid #2a2d33; color: #ccc; cursor: pointer; font-size: 13px; }
+.tab.active { background: #5b6cff; color: #fff; border-color: #5b6cff; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
+.card { position: relative; background: #1e2126; border-radius: 10px; overflow: hidden; aspect-ratio: 1/1; }
+.card img, .card video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card .del-btn { position: absolute; top: 6px; right: 6px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 6px; width: 26px; height: 26px; cursor: pointer; font-size: 14px; }
+.card .cat-badge { position: absolute; bottom: 6px; left: 6px; background: rgba(0,0,0,0.6); color: #fff; font-size: 10px; padding: 3px 8px; border-radius: 10px; }
+
+.empty-msg { color: #777; font-size: 13px; padding: 30px; text-align: center; }
+.progress { font-size: 12px; color: #999; margin-top: 8px; }
